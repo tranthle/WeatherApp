@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<div class = "card">
+    <div class = "search">
+        <input type="text" placeholder="enter city name or zipcode (US only)" 
+        spellcheck = "false">
+        <button><img src = "Weather-icon/search.png"></button>
+    </div>
+    <div class = "weather">
+        <h1 class = "date">Monday, March 25</h1>
+        <!-- <h2 class = "hours"> 3:15pm</h2> -->
+        <div class = "main_display">
+            <img src = "Weather-icon/winter.png" class="weather-icon">
+            <h1 class = "temp">22°F</h1>
+            
+        </div>
+        <h2 class = "city"> Paris</h2>
+        <!-- <h3 class = "description"> description</h3> -->
+            
+        <div class = "details">
+            <div class = "col">
+                <img src="Weather-icon/humidity.png">
+                <div>
+                    <p class = "precip">50%</p>
+                    <p>Precipitation</p>
+                </div>
+            </div>
+            <!-- <div class = "col">
+                <img src="Weather-icon/temperature.png">
+                <div>
+                    <p class = "fl">Temp</p>
+                    <p>Feel Like</p>
+                </div>
+            </div> -->
+            <div class ="col">
+                <img src="Weather-icon/wind.png">
+                <div>
+                    <p class = "wind">15 km/h</p>
+                    <p> Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class =" hourly-title">HOURLY FORECAST</div>
+    <div class = "hourly-chart">
+        
+        <div class = "chart">
+            <div>
+                <canvas id="myChart"></canvas>
+              </div>
+                
+              
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        </div>
+    </div> -->
+    <div class =" daily-title">5-DAY FORECAST</div>
+    
+    <div class = "daily">
+        
+        <div class = "day-card", id="current-day">
+            <p class = "dotw">TODAY</p>
+            <img src="Weather-icon/rain.png">
+            <p class="daily-max-temp">H: 15°  <span>Hi</span></p>
+            <p class="daily-min-temp">L: 10°</p> 
+        </div>
+        <div class = "day-card">
+            <p class = "dotw">TUES</p>
+            <img src="Weather-icon/snow.png">
+            <p class = "daily-max-temp">H: 15° </p>
+            <p class ="daily-min-temp">L: 10°</p>
+        </div>
+        <div class = "day-card">
+            <p class = "dotw" >WED</p>
+            <img src="Weather-icon/cloudy.png">
+            <p class = "daily-max-temp">H: 15° </p>
+            <p>L: 10°</p>
+        </div>
+        <div class = "day-card">
+            <p class = "dotw">THU</p>
+            <img src="Weather-icon/sun.png">
+            <p>H: 15° </p>
+            <p>L: 10°</p>
+        </div>
+        <div class = "day-card">
+            <p class = "dotw">FRI</p>
+            <img src="Weather-icon/thunder-storm.png">
+            <p>H: 15° </p>
+            <p>L: 10°</p>
+        </div>
+
+    </div>
+
+    
+    </div>
+</div>
+<template id = "daycard">
+    <div class = "day-card">
+        <p class = "dotw">TODAY</p>
+        <img src="Weather-icon/rain.png">
+        <p class="daily-max-temp">H: 15° </p>
+        <p class="daily-min-temp">L: 10°</p> 
+    </div>
+</template>
+<script type = "module" src = "main.js"></script>
+
+
+</body>
+</html>
